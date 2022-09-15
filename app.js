@@ -4,7 +4,7 @@ import dotenv from 'dotenv' //Variables de entorno
 
 import router from './router/router.js'
 
-const port = process.env.port || 4000
+const port = process.env.PORT || 3000
 const host = process.env.host || '0.0.0.0'
 dotenv.config({ path: '.env' })
 
