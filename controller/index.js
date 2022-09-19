@@ -10,10 +10,9 @@ import archivo from '../index.json' assert { type: 'json' };
 // }
 
 const operacion = (req, res) => {
-    const { json } = req.params;
-    console.log(json)
-    const operacion = JSON.parse(json)
-    let resultado = eval(operacion.numero.resultado).toString()
+    const { json } = req.params; //Toma los valores enviados
+    const operacion = JSON.parse(json) //Convertimos a objeto el JSON
+    let resultado = eval(operacion.numero).toString()//Operaciones
     res.json({
         resultado
     })
