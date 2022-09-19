@@ -7,6 +7,6 @@ import {
 
 // router.route('/home').get(home)
 
-router.route('/operacion/:numero').get(operacion)
+router.route('/operacion/:json').get(operacion)
 
 export default router;
